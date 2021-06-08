@@ -26,9 +26,9 @@ Obligatorios
 - Tiempo promedio de ejecución (Minutos)
 
 Deseados
-- Promedio de rating
-- Cantidad de votaciones
-- Tiempo promedio de ejecución (Minutos)
+- Cantidad de directores distintos
+- Cantidad de escritores distintos
+- Director con mas contenidos (en caso de ser mas de uno, separarlos por ";")
   
 NOTA: Si una película tiene mas de un género, incluir el cálculo en todos los géneros a los que pertenece.
 
