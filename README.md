@@ -63,9 +63,8 @@ Se evaluara que los valores y las columnas de el archivo de salida entregado sea
 | Nombre     | Descripcion |
 |------------|-------------|
 | `año`      | Columna de tipo `integer` que representa el año de lanzamiento de la pelicula |
-| `genero`   | Columna de tipo `string` que representa el nombre del género de la pelicula |
+| `genero`   | Columna de tipo `string` que representa el nombre del género de cine de la pelicula |
 | `pelicula` | Columna de tipo `string` que representa el nombre de una pelicula |
-| `genero`   | Columan de tipo `string` que representa generos del cine |
 | `votos`    | Columnda de tipo `integer` que representa la media de votos obtenida por parte de las peliculas que reportan el genero |
 
 ### Tiempo de ejecucion
