@@ -45,11 +45,9 @@ Utilizar la imagen `python:3.7-slim` (en [Dockerhub](https://hub.docker.com/_/py
 
 Del entregable se evaluaran diferentes aspectos:
 
-### Formato y estilo
+### 1. Ejecucion del proceso sin errores
 
-Se aplicaran herramientas para evaluar la complacencia del codigo con la guia de estilo conocida como `PEP8`, a su vez se evaluaran errores de sintaxis.
-
-### Archivo de salida correcto
+### 2. Archivo de salida correcto
 
 Se evaluara que los valores y las columnas de el archivo de salida entregado sean correctos. Para que esto pueda ser evaluado es necesario que el archivo de salida tenga las siguientes columnas:
 
@@ -59,6 +57,16 @@ Se evaluara que los valores y las columnas de el archivo de salida entregado sea
 | `genero`   | Columan de tipo `string` que representa generos del cine |
 | `votos`    | Columnda de tipo `integer` que representa la media de votos obtenida por parte de las peliculas que reportan el genero |
 
-### Tiempo de ejecucion
+
+### 3. Formato y estilo
+
+Se aplicaran herramientas para evaluar la complacencia del codigo con la guia de estilo conocida como `PEP8`, a su vez se evaluaran errores de sintaxis.
+
+
+### 4. Tiempo de entrega
+
+
+
+### 5. Tiempo de ejecucion
 
 Se obtendra el tiempo medio de ejecucion del codigo suministrado calculado a partir de 10 corridas. Es deseable que el codigo sea eficiente por lo que lo que se considera mejor el menor tiempo de ejecucion.
