@@ -21,14 +21,14 @@ Sobre estos datos, te solicitamos realizar las transformaciones pertinentes en l
 Obtener una base solo de películas de los últimos 5 años, agrupada por año de lanzamiento y género, con los siguientes atributos (Obligatorios y Deseados):
 
 Obligatorios
-•	Promedio de rating
-•	Cantidad de votaciones
-•	Tiempo promedio de ejecución (Minutos)
+- Promedio de rating
+- Cantidad de votaciones
+- Tiempo promedio de ejecución (Minutos)
 
 Deseados
-•	Promedio de rating
-•	Cantidad de votaciones
-•	Tiempo promedio de ejecución (Minutos)
+- Promedio de rating
+- Cantidad de votaciones
+- Tiempo promedio de ejecución (Minutos)
   
 NOTA: Si una película tiene mas de un género, incluir el cálculo en todos los géneros a los que pertenece.
 
