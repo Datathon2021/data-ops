@@ -53,13 +53,16 @@ El proceso debe ejecutarse de principio a fin sin detener por errores. El uso de
 
 Se evaluara que los valores y las columnas de el archivo de salida entregado sean correctos. Para que esto pueda ser evaluado es necesario que el archivo de salida tenga las siguientes columnas:
 
-| Nombre     | Descripcion |
-|------------|-------------|
-| `startYear`      | Columna de tipo `integer` que representa el año de lanzamiento de la pelicula |
-| `genres`         | Columna de tipo `string` que representa el nombre del género de cine de la pelicula |
-| `runtimeMinutes` | Columna de tipo `float` que representa la media de duracion para todas las peliculas para un dado año-genero. Debe estar redondeada a dos digitos despues de la coma (Ej `0.00`) |
-| `averageRating`  | Columna de tipo `float` que representa la media de votos para todas las peliculas para un dado año-genero. Debe estar redondeada a dos digitos despues de la coma (Ej `0.00`) |
-| `numVotes`       | Columna de tipo `integer` que representa el total de votos para todas las peliculas para un dado año-genero |
+| Nombre     | Requerimiento | Descripcion |
+|------------|---------------|-------------|
+| `startYear`      | Obligatorio |Columna de tipo `integer` que representa el año de lanzamiento de la pelicula |
+| `genres`         | Obligatorio | Columna de tipo `string` que representa el nombre del género de cine de la pelicula |
+| `runtimeMinutes` | Obligatorio | Columna de tipo `float` que representa la media de duracion para todas las peliculas para un dado año-genero. Debe estar redondeada a dos digitos despues de la coma (Ej `0.00`) |
+| `averageRating`  | Obligatorio | Columna de tipo `float` que representa la media de votos para todas las peliculas para un dado año-genero. Debe estar redondeada a dos digitos despues de la coma (Ej `0.00`) |
+| `numVotes`       | Obligatorio | Columna de tipo `integer` que representa el total de votos para todas las peliculas para un dado año-genero |
+| `numDirectors`   | Optativo    | Columna de tipo `integer` que representa el total de votos para todas las peliculas para un dado año-genero |
+| `numWriters`     | Optativo    | Columna de tipo `integer` que representa el total de votos para todas las peliculas para un dado año-genero |
+| `topDirectors`   | Optativo    | Columna de tipo `integer` que representa el total de votos para todas las peliculas para un dado año-genero |
 
 
 ### 3. Formato y estilo
