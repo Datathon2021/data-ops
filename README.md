@@ -11,26 +11,19 @@ Desde el espacio de Data Managment de Advanced Analytics nos encargamos de autom
 
 Dada la multiplicidad de fuentes de datos de Telecom, ponemos enfasis en las buenas practicas de automatizacion, documentacion y mantenimiento de procesos a gran escala. Es por eso que te retamos a aplicar tu conocimiento de principio a fin de un proceso de ETL automatizado.
 
-## El challenge
+## El desafio
 
 Este proceso automatizado consiste en tomar datos de entrada, procesarlos y escribirlos en un archivo de salida. Los datos de entrada se encuentran en el siguiente link: [Datasets](https://datasets.imdbws.com/).
 Estos datos pertenecen al dataset público de IMDB, cuya metadata se encuentra en el siguiente link: [Metadata](https://www.imdb.com/interfaces/).
 
-Sobre estos datos, te solicitamos realizar las transformaciones pertinentes en lenguaje Python con el objetivo de:
 
-Obtener una base solo de películas de los últimos 5 años, agrupada por año de lanzamiento y género, con los siguientes atributos (Obligatorios y Deseados):
+Utilizando el lenguaje Python te proponemos el siguiente desafio:
 
-Obligatorios
-- Promedio de rating
-- Cantidad de votaciones
-- Tiempo promedio de ejecución (Minutos)
+> Para cada *año de estreno* y cada *genero unico* necesitamos calcular la **cantidad total de votos**, la **media de la duracion** y la **media del rating** para todos los titulos de tipo peliculas (`titleType==movie`) que se estrenaron durante los años 2015 y 2020 inclusive (`2015 <= startYear <= 2020`). Tene en cuenta que si una pelicula aparece en mas de un genero se debe incluir en el calculo para cada uno de los generos que pertenece. Ademas, redondea todos los decimales a 2 espacios despues de la coma.
 
-Deseados
-- Promedio de rating
-- Cantidad de votaciones
-- Tiempo promedio de ejecución (Minutos)
-  
-NOTA: Si una película tiene mas de un género, incluir el cálculo en todos los géneros a los que pertenece.
+De manera optativa podes tambien agregar la siguiente informacion:
+
+> Lorem Ipsum
 
 Finalmente, almacenar la salida de este proceso a nivel de la carpeta que se indica para cada caso en la siguiente seccion.
 
@@ -54,16 +47,19 @@ Del entregable se evaluaran diferentes aspectos:
 
 ### 1. Ejecucion del proceso sin errores
 
+El proceso debe ejecutarse de principio a fin sin detener por errores. El uso de buenas practicas para el manejo de errores es aconsejable!
+
 ### 2. Archivo de salida correcto
 
 Se evaluara que los valores y las columnas de el archivo de salida entregado sean correctos. Para que esto pueda ser evaluado es necesario que el archivo de salida tenga las siguientes columnas:
 
 | Nombre     | Descripcion |
 |------------|-------------|
-| `año`      | Columna de tipo `integer` que representa el año de lanzamiento de la pelicula |
-| `genero`   | Columna de tipo `string` que representa el nombre del género de cine de la pelicula |
-| `pelicula` | Columna de tipo `string` que representa el nombre de una pelicula |
-| `votos`    | Columnda de tipo `integer` que representa la media de votos obtenida por parte de las peliculas que reportan el genero |
+| `startYear`      | Columna de tipo `integer` que representa el año de lanzamiento de la pelicula |
+| `genres`         | Columna de tipo `string` que representa el nombre del género de cine de la pelicula |
+| `runtimeMinutes` | Columna de tipo `float` que representa la media de duracion para todas las peliculas para un dado año-genero. Debe estar redondeada a dos digitos despues de la coma (Ej `0.00`) |
+| `averageRating`  | Columna de tipo `float` que representa la media de votos para todas las peliculas para un dado año-genero. Debe estar redondeada a dos digitos despues de la coma (Ej `0.00`) |
+| `numVotes`       | Columna de tipo `integer` que representa el total de votos para todas las peliculas para un dado año-genero |
 
 
 ### 3. Formato y estilo
@@ -73,7 +69,7 @@ Se aplicaran herramientas para evaluar la complacencia del codigo con la guia de
 
 ### 4. Tiempo de entrega
 
-
+Se tomara en cuenta la velocidad en que se resolvio el desafio desde su publicacion, quienes mas rapido envien los resultados mas puntos suman.
 
 ### 5. Tiempo de ejecucion
 
