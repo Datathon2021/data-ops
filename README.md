@@ -23,7 +23,7 @@ Utilizando el lenguaje Python te proponemos el siguiente desafio:
 
 De manera optativa podes tambien agregar la siguiente informacion:
 
-> Lorem Ipsum
+> Para cada *año de estreno* y cada *genero unico* agregar ademas **cantidad de directores distintos**, **cantidad de escritores distintos** y **director con mas contenidos**. Para esta ultima columna y en caso de empate entre directores agregar ambos separados por punto y coma seguido de un espacio (Ejemplo `DirectorA; DirectorB`).
 
 Finalmente, almacenar la salida de este proceso a nivel de la carpeta que se indica para cada caso en la siguiente seccion.
 
