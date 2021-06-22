@@ -1,9 +1,8 @@
 # Challenge campus party 2021
 
-
 ## Descripcion
 
-Automatizar un proceso de ETL de datos utilizando Airflow o cron.
+Automatizar un proceso de ETL de datos utilizando Apache Airflow.
 
 ## Introduccion
 
@@ -25,21 +24,15 @@ De manera optativa podes tambien agregar la siguiente informacion:
 
 > Para cada *año de estreno* y cada *genero unico* agregar ademas **cantidad de directores distintos**, **cantidad de escritores distintos** y **director con mas contenidos**. Para esta ultima columna y en caso de empate entre directores agregar ambos separados por punto y coma seguido de un espacio (A modo de ejemplo, si `DirectorA` y `DirectorB` fuesen ambos los directores con mas contenidos entonces la columna dira: `DirectorA; DirectorB`).
 
-Finalmente, almacenar la salida de este proceso a nivel de la carpeta que se indica para cada caso en la siguiente seccion.
+Finalmente, almacenar la salida de este proceso donde sea indicado para poder ser evaluado.
 
 ## A tener en cuenta!
 
-A los fines de automatizar este proceso, solicitamos el uso de Docker y una herramienta a elección: preferentemente Airflow o en su defecto, Cron. Esto va a requerir la creación de un Dockerfile y el código en Python asociado que sea ejecutado dentro del container. Una vez elegida la imagen completar el archivo Dockerfile.
-
-De acuerdo a la herramienta elegida se espera lo siguiente:
+A los fines de automatizar este proceso, solicitamos el uso de Docker y Apache Airflow. Esto va a requerir la creación de un Dockerfile y el código en Python asociado que sea ejecutado dentro del container.
 
 ### Airflow
 
 Utilizar la imagen `apache/airflow:1.10.10` (en [Dockerhub](https://hub.docker.com/r/apache/airflow)) basada en Apache Airflow v1.10.10. Preparar un container para que cuando se levante, genere la instancia de Airflow con scheduler y webserver y que tenga el dag preparado para ser ejecutado. Colocar el código en la carpeta `dags`. La salida de este proceso debe apuntar a la ruta `/home/airflow` dentro del container.
-
-### Cron
-
-Utilizar la imagen `python:3.7-slim` (en [Dockerhub](https://hub.docker.com/_/python)) basada en Python 3.7 y configurar cron para automatizar un script de Python que ejecute el proceso. En la carpeta `src` colocar el código. La salida de este proceso debe apuntar a la ruta `/app` dentro del container.
 
 ## Evaluacion
 
@@ -64,6 +57,7 @@ Se evaluara que los valores y las columnas de el archivo de salida entregado sea
 | `numWriters`     | Optativo    | Columna de tipo `integer` que representa la cantidad de escritores unicos que escribieron guiones de peliculas para un dado año-genero |
 | `topDirectors`   | Optativo    | Columna de tipo `string` que representa el nombre del director con mas peliculas para un dado año-genero. En caso de que sean multiples, los nombres deben estar separados por un punto y coma seguido de un espacio (`DirectorA; DirectorB`) |
 
+En este punto se tendra en cuenta durante la valoracion del resultado final si se completo la parte optativa del desafio.
 
 ### 3. Formato y estilo
 
