@@ -32,7 +32,11 @@ A los fines de automatizar este proceso, solicitamos el uso de Docker y Apache A
 
 ### Airflow
 
-Utilizar la imagen `apache/airflow:1.10.10` (en [Dockerhub](https://hub.docker.com/r/apache/airflow)) basada en Apache Airflow v1.10.10. Preparar un container para que cuando se levante, genere la instancia de Airflow con scheduler y webserver y que tenga el dag preparado para ser ejecutado. Colocar el código en la carpeta `dags`. La salida de este proceso debe apuntar a la ruta `/home/airflow` dentro del container.
+Utilizar la imagen `apache/airflow:1.10.10` (en [Dockerhub](https://hub.docker.com/r/apache/airflow)) basada en Apache Airflow v1.10.10. Preparar un container para que cuando se levante, genere la instancia de Airflow con scheduler y webserver y que tenga el dag preparado para ser ejecutado. Colocar el código en la carpeta `dags`. La salida de este proceso debe apuntar a la ruta `/home/airflow` dentro del container y el nombre del archivo sera `resultados.csv`. Consideramos una ejecucion sin errores aquella que finaliza con la creacion del archivo `/home/airflow/resultados.csv`.
+
+### Entorno de desarrollo
+
+Para poder realizar el ejercicio por lo menos vas a necesitar tener installado [docker](https://docs.docker.com/get-docker/) y [python v3+](https://www.python.org/downloads/). Para escribir codigo podes utilizar tu IDE preferido, si no conoces ninguno te sugerimos [VSCode](https://code.visualstudio.com/download). Todas estas aplicaciones estan disponibles para Linux, Windows y Mac.
 
 ## Evaluacion
 
