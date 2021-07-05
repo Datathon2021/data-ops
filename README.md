@@ -75,3 +75,7 @@ Se tomara en cuenta la velocidad en que se resolvio el desafio desde su publicac
 ### 5. Tiempo de ejecucion
 
 Se obtendra el tiempo medio de ejecucion del codigo suministrado calculado a partir de 10 corridas. Es deseable que el codigo sea eficiente por lo que lo que se considera mejor el menor tiempo de ejecucion.
+
+## Envio de respuestas
+
+Una vez que hayas terminado comprimi todo el codigo asociado al proyecto en un archivo con extension `.zip` y envianoslos utilizando el [form oficial](https://forms.gle/NCmceGRUEbMMYioq5). No te olvides que solo tenes una oportunidad de responder por participante.
